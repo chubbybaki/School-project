@@ -1,0 +1,532 @@
+/* style - adaptation - ET */
+
+/* .et-page:nth-child(1) {
+  background: yellow;
+}
+
+.et-page:nth-child(2) {
+  background: blue;
+}
+      
+.et-page:nth-child(3) {
+  background: purple;
+}
+
+style - core 
+
+/*::-webkit-scrollbar {
+    height: 3px;
+    width: 3px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555555;
+    -webkit-border-radius: 7px;
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}*/
+
+body {
+  margin: 0;
+  background: black;}
+
+h2 {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  color: black;}
+
+.topbar {
+  position: fixed;
+  height: 45px;
+  width: 100%;
+  background-color: rgba(249,0,249,0.8);
+  z-index: 99999; 
+  padding: 10px;
+  text-align: center;}
+
+.button_tb_left {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: yellow;
+  left: 10px;
+  top: 10px;}
+
+.button_tb_right {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: maroon;
+  right: 30px;
+  top: 10px;}
+
+.tabbar {
+  position: fixed;
+  height: 45px;
+  width: 100%;
+  background-color: orange;
+  z-index: 99999; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  bottom: 0;
+  z-index: 99999;}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:65px;
+  padding: 10px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9dff89+0,05abe0+100 */
+  background: #9dff89; /* Old browsers */
+  background: -moz-linear-gradient(top, #9dff89 0%, #05abe0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #9dff89 0%,#05abe0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9dff89 0%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dff89', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+}
+
+#push {
+  height: 45px;
+  width: 200px;
+  background-color: green;
+  z-index: 99999; 
+  line-height: 45px; 
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: arial, sans-serif;
+  color: white;}
+
+a {
+  text-decoration: none;
+  top:100%;
+  position: relative;}
+
+b {
+  text-decoration: none;
+  font-family: barlow;
+  font-weight: normal;
+  font-size: 20px;
+  color: white;}
+
+#push:hover {
+  background-color: blue;}
+
+#push:active {
+  background-color: black;}
+
+#splashscreen {
+  height: 100%;
+  width: 100%;
+  background-color:black;
+  font-family: arial, sans-serif;
+  font-color:black;
+  font-size:33px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;}
+
+#logo {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  background-image: url(../img/tourne.gif);
+  background-size: cover;
+  background-repeat: no-repeat;}
+
+#menu1 ly{
+  position: relative;
+  top:-55px;
+  padding-right: 25px;
+  padding-bottom: 400px;
+  margin-left: 300px;
+  background-image: url(../img/accueil.png);
+  background-repeat: no-repeat;
+  background-size: contain;}
+   
+
+#menu1 li{
+  font-family: barlow light;
+  font-size: 20px;
+  position: relative;
+  padding-left: 25px;
+  padding-inline-start: 40px;
+  background-image: url(../img/oreille.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  margin-left: 25px;}
+
+#menu1 la{
+  font-family: barlow light;
+  font-size: 20px;
+  position: relative;
+  padding-left: 25px;
+  padding-inline-start: 40px;
+  background-image: url(../img/journal.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 25px;}
+
+#menu1 le{
+  font-family: barlow light;
+  font-size: 20px;
+  position: relative;
+  padding-left: 25px;
+  padding-inline-start: 40px;
+  top: 10px;
+  background-image: url(../img/fiole.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 25px;} 
+
+#menu1 lu{
+  font-family: barlow light;
+  font-size: 20px;
+  position: relative;
+  padding-left: 25px;
+  padding-inline-start: 40px;
+  top: 400px;
+  background-image: url(../img/compte.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 25px;}
+
+#menu1 lo{
+  font-family: barlow light;
+  font-size: 20px;
+  position: relative;
+  padding-left: 25px;
+  padding-inline-start: 40px;
+  top: 435px;
+  right: 135px;
+  background-image: url(../img/paramètre.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 25px;} 
+
+
+#menu1 {
+  background: radial-gradient(ellipse at center,  rgb(178,178,178) 0%,rgb(0,0,0) 100%);
+}
+
+.title_screen {
+ margin: auto 0;
+ margin-top: -33px;
+ /* enlever le margin-top si hamburger menu à droite */
+}
+
+.btlist{
+  height: 40px;
+  width: 100%;}
+
+.btbar {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  display:inline-block;
+  margin-right: 5%;
+  background-color: yellow;}
+
+#bt5 { margin:0;}
+
+#bt1 {
+  /* spécification de style par bt*/
+}
+
+#tetiere {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 99999999999999999;}
+
+.case {
+  position: relative;
+  height: 400px;
+  background-color: gray;
+  border-radius: 20px;
+  box-sizing: border-box; /* content-box */
+  width: 100%;
+  border: solid black 10px;
+  margin-top: -11px;}
+
+#case1 {
+  margin-top: 0;
+  background-image: url(../img/anderson.jpg);
+  background-size: cover;}
+
+#case2 {
+  background-image: url(../img/ntm.jpg);
+  background-size: cover;}
+
+#case3 {
+  background-image: url(../img/freeze.jpg);
+  background-size: cover;}
+
+#icone {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background-image: url(../img/icone.png);
+  background-size: cover;
+  right: 30px;
+  margin-top: -30px;}
+
+.degrad {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: yellow;
+  color:white;
+  font-family: barlow, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  bottom: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+98&0+0,0.75+98 */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 98%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 98%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 ); /* IE6-9 */
+}
+
+.text {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  color:white;
+  font-weight: regular;
+  font-family: macula solid;
+  font-size: 35px;
+  text-align: right;
+  bottom: 80px;
+  right: 30px;}
+
+.titre {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  color:white;
+  font-weight: regular;
+  font-family: macula line;
+  font-size: 35px;
+  text-align: right;
+  bottom: 30px;
+  right: 30px;}
+
+#cluster {
+  width: 100%;
+  height: 400px;
+    white-space: nowrap;
+    overflow: scroll;}
+
+#cluster > div {
+  height: 350px;
+  width: 500px;
+  background-color: gray;
+  margin-right: 5px;
+  display: inline-block;
+  text-align: center;}
+
+.cell {
+  border-radius: 20px;}
+
+#cluster a{
+  font-family: barlow;
+  font-weight: normal;
+  font-size: 20px;  
+  color: #BFA41F;  }
+
+#cell1 {
+  background-image: url(../img/shay.jpg);
+  background-size: cover;}
+
+#cell2 {
+  background-image: url(../img/kai.jpg);
+  background-size: cover;}
+
+#cell3 {
+  background-image: url(../img/lazulie.png);
+  background-size: cover;}
+
+#cell4 {
+  background-image: url(../img/iconique.jpg);
+  background-size: cover;}
+
+#cell5 {
+  background-image: url(../img/meryl.jpg);
+  background-size: cover;}
+
+#cell6 {
+  background-image: url(../img/bianca.jpg);
+  background-size: cover;}
+
+#cell7 {
+  background-image: url(../img/sneazzy.png);
+  background-size: cover;}
+
+#cell8 {
+  background-image: url(../img/laylow.jpg);
+  background-size: cover;}
+
+.podcast {
+  padding: 625px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 25%;
+  background-image: url(../img/anderson.jpg);
+  background-size: cover;
+  font-family: macula solid;
+  font-size: 50px;
+  color: white;}
+
+.pochette a{
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 40%;
+  width: 385px;
+  height: 350px;
+  right: 10%;
+  left: 10%;
+  top: 40%;
+  border-radius: 30px;
+  border: 10px solid white;
+  background-image: url(../img/audio.png);
+  background-size: contain;
+  background-repeat: no-repeat;}
+
+.spotify {
+  position: absolute;
+  left: 40%;
+  right: 50%;
+  margin-top: 60%;
+  top: 60%;}
+
+.name {
+  color: white;
+  font-family: barlow ;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -150px;}
+ 
+.plusloin{
+  padding: 600px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 25%;
+  background-image: url(../img/ntm.jpg);
+  background-size: cover;
+  font-family: macula solid;
+  font-size: 50px;
+  color: white;}
+
+.article {
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 40%;
+  width: 350px;
+  height: 350px;
+  right: 10%;
+  left: 10%;
+  top: 40%;
+  border-radius: 30px;
+  border: 10px solid white;
+  background-image: url(../img/arte.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;}
+
+.courant {
+  position: absolute;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 60%;
+  width: 500px;
+  right: 5%;
+  left: 15%;
+  top: 60%;
+  font-family: barlow;
+  font-weight: normal;
+  font-size: 15px;
+  color: white;
+  text-align: justify;}
+
+.cas{
+  padding: 600px;
+  padding-top: 0px;
+  padding-right: 10%;
+  padding-left: 10%;
+  background-image: url(../img/freeze.jpg);
+  background-size: cover;
+  font-family: macula solid;
+  font-size: 50px;
+  color: white;
+  text-align: center;}
+
+
+.soustitre {
+  padding: 620px;
+  padding-top: 20px;
+  padding-right: 10%;
+  padding-left: 10%;
+  background: black;
+  font-family: macula solid;
+  font-size: 21px;
+  text-align: center;
+  color: #D589DE;}
+
+dl > div {
+  position: relative;
+  background: black;
+  color: white;
+  font: normal 15px/18px barlow;
+  bottom: 550px;}
+
+dt {
+  background: #BFA41F;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;  
+  color: white ;
+  font: bold 18px/21px barlow;
+  padding: 0 0 0 5px;}
+
+dd {
+  font: normal 20px/45px barlow;
+  margin: 0;
+  padding: 0 0 0 12px;
+  white-space: nowrap;}
+
+df {
+  font: normal 20px/45px barlow;
+  margin: 0;
+  padding: 0 0 0 12px;
+  white-space: nowrap;}
+
+dd + dd {
+  border-top: 1px solid white;}
+
+df + df {
+  border-top: 1px solid white;
+}
+
+.info {
+  padding: 620px;
+  padding-top: 0px;
+  padding-right: 10%;
+  padding-left: 10%;
+  background: black;
+  background-size: cover;
+  font-family: macula solid;
+  font-size: 50px;
+  color: white;
+  text-align: center;}

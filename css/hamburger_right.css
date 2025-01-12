@@ -1,0 +1,104 @@
+/******* m1 *******/
+
+#menuToggle, #menuToggle1, #menuToggle2, #menuToggle3, #menuToggle4, #menuToggle5, #menuToggle6, #menuToggle7, #menuToggle8, #menuToggle9, #menuToggle10
+{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  right:40px;
+  margin-top:12px;
+}
+
+#menuToggle input, #menuToggle1 input, #menuToggle2 input, #menuToggle3 input, #menuToggle4 input, #menuToggle5 input, #menuToggle6 input, #menuToggle7 input, #menuToggle8 input, #menuToggle9 input, #menuToggle1 input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle a, #menuToggle1 a, #menuToggle2 a, #menuToggle3 a, #menuToggle4 a, #menuToggle5 a, #menuToggle6 a, #menuToggle7 a, #menuToggle8 a, #menuToggle9 a, #menuToggle10 a 
+{
+  color:white;
+}
+
+#menuToggle span, #menuToggle1 span, #menuToggle2 span,  #menuToggle3 span, #menuToggle4 span, #menuToggle5 span, #menuToggle6 span, #menuToggle7 span, #menuToggle8 span, #menuToggle9 span, #menuToggle10 span 
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;  
+  z-index: 99999;  
+  transform-origin: 4px 0px; 
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child, #menuToggle1 span:first-child, #menuToggle2 span:first-child, #menuToggle3 span:first-child, #menuToggle4 span:first-child, #menuToggle5 span:first-child, #menuToggle6 span:first-child, #menuToggle7 span:first-child, #menuToggle8 span:first-child, #menuToggle9 span:first-child, #menuToggle10 span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2), #menuToggle1 span:nth-last-child(2), #menuToggle2 span:nth-last-child(2), #menuToggle3 span:nth-last-child(2), #menuToggle4 span:nth-last-child(2), #menuToggle5 span:nth-last-child(2), #menuToggle6 span:nth-last-child(2), #menuToggle7 span:nth-last-child(2), #menuToggle8 span:nth-last-child(2), #menuToggle9 span:nth-last-child(2), #menuToggle10 span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span, #menuToggle1 input:checked ~ span, #menuToggle2 input:checked ~ span, #menuToggle3 input:checked ~ span, #menuToggle4 input:checked ~ span, #menuToggle5 input:checked ~ span, #menuToggle6 input:checked ~ span, #menuToggle7 input:checked ~ span, #menuToggle8 input:checked ~ span, #menuToggle9 input:checked ~ span, #menuToggle10 input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3), #menuToggle1 input:checked ~ span:nth-last-child(3), #menuToggle2 input:checked ~ span:nth-last-child(3), #menuToggle3 input:checked ~ span:nth-last-child(3), #menuToggle4 input:checked ~ span:nth-last-child(3), #menuToggle5 input:checked ~ span:nth-last-child(3), #menuToggle6 input:checked ~ span:nth-last-child(3), #menuToggle7 input:checked ~ span:nth-last-child(3), #menuToggle8 input:checked ~ span:nth-last-child(3), #menuToggle9 input:checked ~ span:nth-last-child(3), #menuToggle10 input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2), #menuToggle1 input:checked ~ span:nth-last-child(2), #menuToggle2 input:checked ~ span:nth-last-child(2), #menuToggle3 input:checked ~ span:nth-last-child(2), #menuToggle4 input:checked ~ span:nth-last-child(2), #menuToggle5 input:checked ~ span:nth-last-child(2), #menuToggle6 input:checked ~ span:nth-last-child(2), #menuToggle7 input:checked ~ span:nth-last-child(2), #menuToggle8 input:checked ~ span:nth-last-child(2), #menuToggle9 input:checked ~ span:nth-last-child(2), #menuToggle10 input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menuToggle input:checked ~ ul, #menuToggle1 input:checked ~ ul, #menuToggle2 input:checked ~ ul, #menuToggle3 input:checked ~ ul, #menuToggle4 input:checked ~ ul, #menuToggle5 input:checked ~ ul, #menuToggle6 input:checked ~ ul, #menuToggle7 input:checked ~ ul, #menuToggle8 input:checked ~ ul, #menuToggle9 input:checked ~ ul, #menuToggle10 input:checked ~ ul
+{
+  transform: none;
+}
+
+#menu, #menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9, #menu10
+{
+  position: absolute;
+  width: 300px;
+  height: 5000px;
+  margin: -50px 0 0 -347px;
+  padding: 50px;
+  padding-top: 125px;
+  background: red;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li, #menu1 li, #menu2 li, #menu3 li, #menu4 li, #menu5 li, #menu6 li, #menu7 li, #menu8 li, #menu9 li, #menu10 li
+{
+  padding: 10px 0;
+  font-size: 18px;
+  font-family: arial, sans-serif;
+}
+

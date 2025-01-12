@@ -1,0 +1,290 @@
+<!-- mockup MyApp, transitions lib: <http://dan-silver.github.io/ElementTransitions/> -->
+
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+
+    <!-- début : affichage E1 Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fin : affichage E1 Mobile -->
+
+    <!-- début : dépendances ET -->
+    <link rel="stylesheet" type="text/css" href="css/elementTransitions.css" />
+    <script src="js/elementTransitions.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+    <!-- fin : dépendances ET -->
+
+    <!-- début : style H menu -->
+    <link rel="stylesheet" type="text/css" href="css/hamburger_left.css" />
+    <!-- fin : style H menu -->
+
+    <!-- début : mon style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_2.css" />
+ 
+    <!-- fin : mon style -->
+
+
+    <title>WAKEUP</title>
+
+  </head>
+
+  <body>
+
+  <!-- début : wrapper/empaquetage global -->
+  <div class="et-wrapper"> 
+
+
+<div id="0" data-role="page" class="et-page">
+
+    <!-- début : content --> 
+     <div id="splashscreen">
+        <div id="logo" class="et-rotate" et-in="scaleUpCenter delay500" et-out="scaleDownCenter" et-nextP=1></div>
+     </div>
+     <!-- fin : content -->
+
+
+</div>
+    <!-- mon écran 0-->   
+    <div id="1" data-role="page" class="et-page">
+
+      <!-- début : tetiere --> 
+      <div id="tetiere">
+
+     <!-- début : hamburger menu -->  
+        <nav role="navigation">
+          <div id="menuToggle1">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu1">
+           <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=1><ly></ly></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=2><li>podcast</li></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=3><la>pour aller plus loin</la></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=4><le>étude de cas</le></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=5><lu>compte</lu></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=6><lo>paramètre</lo></b>
+          </ul>
+          
+          </div>
+        </nav>
+        <!-- fin : hamburger menu -->  
+
+        <div id="icone"></div>
+      </div>
+      <!-- fin : tetiere --> 
+
+      <!-- début : mes cases --> 
+      <div id="case1" class="case">
+       <div class="degrad"></div>
+       <div class="text"><a class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=2>phénomène</a></div>
+       <div class="titre"><a class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=2>laylow</a></div>
+      </div>
+      <div id="case2" class="case">
+        <div class="degrad"></div>
+       <div class="text"><a class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=3>SUCCES STORY</a></div>
+       <div class="titre"><a class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=3>NTM</a></div>
+      </div>
+      <div id="case3" class="case">
+        <div class="degrad"></div>
+       <div class="text"><a class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=4>FREEZE CORLEONE</a></div>
+       <div class="titre"><a class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=4>RéFéRENCES</a></div>
+      </div>
+
+      <!-- fin : mes cases --> 
+
+      <!-- début : cluster divs --> 
+      <div id="cluster">
+    
+        <div id="cell1" class="cell">
+          <a href="https://youtu.be/o3y1-5nOh4A?si=XX-GQZl5ysbok-cd">Shay | Commando</a>      
+        </div>
+
+        <div id="cell2" class="cell">
+          <a href="https://youtu.be/O9k2oFJLqjU?si=LbPIFAHZj0nzCE_1">Kay the prodigy & Reachie Beats | Chut!</a>
+        </div>
+
+        <div id="cell3" class="cell">
+          <a href="https://youtu.be/qsmBSU6vF1s?si=fQuZjyw4R9hgT1jj"> ANGILINAZULI & Lazulie | Booty applaudit</a>
+        </div> 
+
+        <div id="cell4" class="cell">
+          <a href=https://youtu.be/mVa40o1n_Eo?si=r-UIdeUPuEbuyKYY> LeJuiice | Iconique</a>
+        </div> 
+
+        <div id="cell5" class="cell">
+          <a href="https://youtu.be/jPUr-WuU-OE?si=8ruwva6EYqSZ1FQI"> LeJuiice & Meryl | O NONO</a>
+        </div> 
+
+        <div id="cell6" class="cell">
+          <a href="https://youtu.be/CcPEnnVgZrM?si=Y11APwyNA_vI4nFZ"> Costa Bianca & Sneazzy | Blocka</a>
+        </div> 
+
+        <div id="cell7" class="cell">
+          <a href="https://youtu.be/-4YoB6W61xg?si=sEIHRna86vpOPrf_"> Sneazzy | J'attendais</a>
+        </div> 
+
+        <div id="cell8" class="cell">
+          <a href="https://youtu.be/o9MXibiDuGk?si=KwZu6g-FkKuHrN9U"> Sneazzy & Laylow | No love</a>
+        </div> 
+
+      </div>
+      <!-- fin : cluster divs --> 
+
+    </div>
+
+    <!-- mon écran 1-->   
+    
+    <!-- début : tetiere --> 
+      <div id="tetiere">
+
+     <!-- début : hamburger menu -->  
+        <nav role="navigation">
+          <div id="menuToggle1">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu1">
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=1><ly></ly></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=2><li>podcast</li></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=3><la>pour aller plus loin</la></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=4><le>étude de cas</le></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=5><lu>compte</lu></b>
+            <b class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=6><lo>paramètre</lo></b>
+          </ul>
+          </div>
+        </nav>
+        <!-- fin : hamburger menu -->  
+
+        <div id="icone"></div>
+      </div>
+      <!-- fin : tetiere --> 
+
+  <div id="2" data-role="page" class="et-page">
+
+     <div id="carre2"></div>
+      <div class="podcast">phénomène laylow</div>
+      <div class="soustitre">toutes les théories autour de L'étrange histoire de Monsieur Anderson</div>
+      <div class="pochette"> <a href="https://youtu.be/ZxNUiqd1JUM?si=rJiHKkwap2S5qdI-"></a></div>
+
+      <div class="spotify"> <audio controls> <source src="mp3/son.mp3" type="audio/mp3"></audio></div>
+    <div class="name">Détails et théories sur L'étrange histoire de Monsieur Anderson - STEPAN</div>
+    
+   </div>
+
+
+    <!-- mon écran 2-->   
+    <div id="3" data-role="page" class="et-page">
+
+      <div id="carre3"></div> 
+      <div class="plusloin">succes story : ntm</div>
+      <div class="soustitre">Retour sur Le monde de demain, série retraçant l'assenscion du Rap en France et les débuts du groupe NTM</div>
+      <div class="article"></div>
+      <div class="courant"> Le monde de demain, disponible sur Netflix, est LA série à regarder pour tout fan de musique et surtout de rap. On y voit les débuts du Hip-Pop et comment les Etats-Unis ont influencé le DJ Dee Nasty, véritable pionnier de l'évolution du hip-pop au rap. En parrallèle on découvre les jeunesses de JoeyStarr ainsi que KoolShen, un récit on ne peut plus vraissemblable puisque les concernés étaient présents en plateau afin de donner des indications aux acteurs et à la réalisation. Cette série offre une vision neuve de ce qu'est cet art. En effet, tant il est ancré dans notre société acteulle, on oublie qu'il a dû s'imposer pour se faire sa place et être reconnu comme pouvant exister sans être stéréotypé.</div>
+    </div>
+
+
+    <!-- mon écran 3-->   
+    <div id="4" data-role="page" class="et-page">
+
+      <div id="carre4"></div>
+      <div class="cas">freeze corleone - Références</div>
+      <div class="soustitre"> Du Projet BlueBeam à lAttaque des clones, voici la restitution des références présentes dans tous les projets de Freeze Corleone</div>
+    
+    <div><dl>
+
+   <div>
+    <dt>Cinéma</dt>
+        <dd>Harry Potter</dd>
+        <dd>Matrix</dd>
+        <dd></dd>
+    </div>    
+
+    <div>
+    <dt>Complots</dt>
+        <dd>Illuminatis</dd>
+        <dd>Projet BlueBeam</dd>
+        <dd></dd>
+   </div>
+
+    <div>
+    <dt>Mangas</dt>
+        <dd>Dragon Ball</dd>
+        <dd>Hunter x Hunter</dd>
+        <dd>Pokémon</dd>
+   </div>
+
+  <div>
+    <dt>Politique</dt>
+        <dd>Europe</dd>
+          <dd>France</dd>
+          <dd>Allemagne</dd>
+          <dd>Italie</dd>
+        <dd>Amérique</dd>
+          <dd>Etats-Unis</dd>
+          <dd>Colombie</dd>
+        <dd>Afrique</dd>
+  </div>
+
+   <div>
+    <dt>Sport</dt>
+        <dd>Basket-ball</dd>
+        <dd>Boxe</dd>
+        <dd>Football</dd>
+   </div>
+
+
+</dl></div>
+    
+
+    </div>
+
+
+    <!-- mon écran 4-->   
+    <div id="5" data-role="page" class="et-page">
+
+      <div id="carre5"></div>
+      <div class="info">compte</div>
+    </div>
+
+
+    <!-- mon écran 5-->   
+    <div id="6" data-role="page" class="et-page">
+
+      <div id="carre6"></div>
+      <div class="info">paramètre</div>
+    </div>
+
+
+
+  </div>
+  <!-- fin : wrapper/empaquetage global -->
+
+    <!-- partial -->
+
+  <script  src="script.js"></script>
+
+
+  </body>
+
+  <!-- début : script plein écran -->
+  <!--  <script>
+    if (document.fullscreenEnabled) {
+      var btn = document.getElementById("splashscreen");
+      btn.addEventListener("click", function (event) { 
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        }
+      }, false);    
+    }
+  </script> -->
+  <!-- fin : script plein écran -->
+
+</html>
